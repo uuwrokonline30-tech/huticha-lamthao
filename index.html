@@ -1,31 +1,10 @@
-<!DOCTYPE html>
-<html lang="vi">
-<head>
-<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>HUTICHA LÂM THAO</title>
-<link rel="stylesheet" href="style.css">
-</head>
-<body>
+<!DOCTYPE html><html lang="vi"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>HUTICHA LÂM THAO</title><link rel="stylesheet" href="style.css"></head><body>
 <div class="popup">🎉 Chào mừng đến HUTICHA LÂM THAO</div>
-<header>
-<img src="logo.svg" class="logo" alt="HUTICHA">
-<div class="brand"><h1>HUTICHA LÂM THAO</h1><p>Trà sữa • Đồ ăn vặt • Coffee</p></div>
-<div class="cart">🛒 <span id="cartCount">0</span></div>
-</header>
-<nav><input id="search" placeholder="Tìm món ăn, đồ uống..."><a>Trang chủ</a><a>Thực đơn</a><a>Khuyến mãi</a><a>Liên hệ</a></nav>
+<header><img src="logo.svg" class="logo" alt="HUTICHA"><div class="brand"><h1>HUTICHA LÂM THAO</h1><p>Trà sữa • Đồ ăn vặt • Coffee</p></div><button onclick="showOrders()">📋 Lịch sử đơn</button><div class="cart">🛒 <span id="cartCount">0</span></div></header>
+<nav><input id="search" placeholder="Tìm món ăn, đồ uống..." oninput="searchFood()"><a>Trang chủ</a><a>Thực đơn</a><a>Khuyến mãi</a><a>Liên hệ</a></nav>
 <section class="hero"><h2>Đặt món ngon mỗi ngày</h2><p>Giao hàng nhanh tại Lâm Thao - Phú Thọ</p><button>ĐẶT HÀNG NGAY</button></section>
 <section class="category"><div>🧋 <strong>Đồ uống</strong></div><div>🍜 <strong>Đồ ăn</strong></div><div>🔥 <strong>Combo</strong></div><div>🎁 <strong>Ưu đãi</strong></div></section>
 <section class="promo"><h2>🔥 Khuyến mãi hôm nay</h2><p>Combo HUTICHA giá tốt mỗi ngày</p></section>
-<main class="container"><h2>Menu nổi bật</h2><div class="grid">
-<div class="item"><img src="https://images.unsplash.com/photo-1558857563-b371033873b8?w=400" alt="Trà sữa"><h3>Trà sữa HUTICHA</h3><p>35.000đ</p><button onclick="addCart('Trà sữa HUTICHA',35000)">+ Thêm giỏ</button></div>
-<div class="item"><img src="https://images.unsplash.com/photo-1569058242253-92a9c755a0ec?w=400" alt="Mì cay"><h3>Mì cay Hàn Quốc</h3><p>45.000đ</p><button onclick="addCart('Mì cay Hàn Quốc',45000)">+ Thêm giỏ</button></div>
-<div class="item"><img src="https://images.unsplash.com/photo-1621939514649-280e2ee25f60?w=400" alt="Ăn vặt"><h3>Ăn vặt đặc biệt</h3><p>35.000đ</p><button onclick="addCart('Ăn vặt đặc biệt',35000)">+ Thêm giỏ</button></div>
-<div class="item"><img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=400" alt="Cafe"><h3>Cafe HUTICHA</h3><p>30.000đ</p><button onclick="addCart('Cafe HUTICHA',30000)">+ Thêm giỏ</button></div>
-<div class="item"><img src="https://images.unsplash.com/photo-1572449043416-55f4685c9bb7?w=400" alt="Combo"><h3>Combo tiết kiệm</h3><p>69.000đ</p><button onclick="addCart('Combo tiết kiệm',69000)">+ Thêm giỏ</button></div>
-<div class="item"><img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?w=400" alt="Đồ ăn"><h3>Pizza mini HUTICHA</h3><p>49.000đ</p><button onclick="addCart('Pizza mini',49000)">+ Thêm giỏ</button></div>
-</div></main>
-<section class="cartbox"><h2>Giỏ hàng</h2><div id="cart"></div><h3 id="total">Tổng: 0đ</h3></section>
-<section class="contact"><h2>Liên hệ đặt hàng</h2><p>📍 Lâm Thao - Phú Thọ</p><p>💬 Zalo | Facebook | Hotline</p></section>
-<footer>HUTICHA LÂM THAO © 2026</footer>
-<script src="script.js"></script>
-</body></html>
+<main class="container"><h2>Menu nổi bật</h2><div class="grid"><div class="item"><img src="https://images.unsplash.com/photo-1558857563-b371033873b8?w=400"><h3>Trà sữa HUTICHA</h3><p>35000đ</p><button onclick="addCart('Trà sữa HUTICHA',35000)">+ Thêm giỏ</button></div><div class="item"><img src="https://images.unsplash.com/photo-1569058242253-92a9c755a0ec?w=400"><h3>Mì cay Hàn Quốc</h3><p>45000đ</p><button onclick="addCart('Mì cay Hàn Quốc',45000)">+ Thêm giỏ</button></div><div class="item"><img src="https://images.unsplash.com/photo-1621939514649-280e2ee25f60?w=400"><h3>Ăn vặt đặc biệt</h3><p>35000đ</p><button onclick="addCart('Ăn vặt đặc biệt',35000)">+ Thêm giỏ</button></div><div class="item"><img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=400"><h3>Cafe HUTICHA</h3><p>30000đ</p><button onclick="addCart('Cafe HUTICHA',30000)">+ Thêm giỏ</button></div></div></main>
+<section class="cartbox"><h2>🛒 Giỏ hàng</h2><div id="cart"></div><h3 id="total">Tổng: 0đ</h3><button onclick="checkout()">Đặt hàng</button></section>
+<section class="contact"><h2>Liên hệ đặt hàng</h2><p>📍 Lâm Thao - Phú Thọ</p><p>💬 Zalo | Facebook | Hotline</p></section><footer>HUTICHA LÂM THAO © 2026</footer><script src="script.js"></script></body></html>
