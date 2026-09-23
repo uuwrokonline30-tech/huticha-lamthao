@@ -2,30 +2,30 @@
 <html lang="vi">
 <head>
 <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>HUTICHA LÂM THAO | Đồ ăn & Đồ uống</title>
+<title>HUTICHA LÂM THAO - Đặt món online</title>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div class="popup" id="welcome">🎉 Chào mừng đến HUTICHA LÂM THAO <button onclick="closePopup()">×</button></div>
+<div class="popup" id="welcome">🎉 Chào mừng đến HUTICHA LÂM THAO</div>
 <header>
-<img src="logo.svg" class="logo">
-<div class="brand"><h1>HUTICHA LÂM THAO</h1><p>Trà sữa • Coffee • Đồ ăn vặt • Giao nhanh tại Lâm Thao</p></div>
-<div class="cart">🛒 <span id="cartCount">0</span></div>
+<img src="logo.svg" class="logo"><div><h1>HUTICHA LÂM THAO</h1><p>Đồ ăn vặt • Trà sữa • Coffee</p></div><div class="cart">🛒 <span id="cartCount">0</span></div>
 </header>
-<nav><input id="search" placeholder="🔍 Tìm món yêu thích..." onkeyup="searchFood()"><span>Trang chủ</span><span>Đồ ăn</span><span>Đồ uống</span><span>Khuyến mãi</span><span>Liên hệ</span></nav>
-<section class="hero"><h2>HUTICHA LÂM THAO</h2><h3>Đậm vị - Chuẩn chất - Giao nhanh</h3><p>🔥 Combo hôm nay giảm giá đặc biệt cho khách hàng Lâm Thao</p><button>Đặt hàng ngay</button></section>
-<section class="promo"><h2>🔥 KHUYẾN MÃI HÔM NAY</h2><p>Combo trà sữa + đồ ăn chỉ từ 69.000đ</p></section>
-<section class="container" id="products">
-<h2>🍜 Đồ ăn nổi bật</h2><div class="grid">
-<div class="item"><div class="photo">🍜</div><h3>Mì cay Hàn Quốc</h3><p>45.000đ</p><button onclick="addCart('Mì cay Hàn Quốc',45000)">+ Thêm giỏ hàng</button></div>
-<div class="item"><div class="photo">🍟</div><h3>Ăn vặt HUTICHA</h3><p>35.000đ</p><button onclick="addCart('Ăn vặt HUTICHA',35000)">+ Thêm giỏ hàng</button></div>
+<nav><input placeholder="🔍 Tìm món ăn, đồ uống..." id="search"><a>Trang chủ</a><a>Menu</a><a>Khuyến mãi</a><a>Liên hệ</a></nav>
+<section class="hero"><h2>Đặt món ngon mỗi ngày</h2><p>Giao nhanh tại Lâm Thao - Phú Thọ</p><button>Đặt hàng ngay</button></section>
+<section class="category"><div>🥤 Đồ uống</div><div>🍜 Đồ ăn</div><div>🔥 Combo</div><div>🎁 Ưu đãi</div></section>
+<section class="promo"><h2>🔥 Khuyến mãi hôm nay</h2><p>Combo tiết kiệm dành cho khách hàng HUTICHA</p></section>
+<main class="container">
+<h2>Menu nổi bật</h2>
+<div class="grid">
+<div class="item"><h3>Trà sữa HUTICHA</h3><p>35.000đ</p><button onclick="addCart('Trà sữa HUTICHA',35000)">Thêm món</button></div>
+<div class="item"><h3>Mì cay Hàn Quốc</h3><p>45.000đ</p><button onclick="addCart('Mì cay Hàn Quốc',45000)">Thêm món</button></div>
+<div class="item"><h3>Ăn vặt đặc biệt</h3><p>35.000đ</p><button onclick="addCart('Ăn vặt đặc biệt',35000)">Thêm món</button></div>
+<div class="item"><h3>Cafe HUTICHA</h3><p>30.000đ</p><button onclick="addCart('Cafe HUTICHA',30000)">Thêm món</button></div>
 </div>
-<h2>🥤 Đồ uống</h2><div class="grid">
-<div class="item"><div class="photo">🧋</div><h3>Trà sữa HUTICHA</h3><p>35.000đ</p><button onclick="addCart('Trà sữa HUTICHA',35000)">+ Thêm giỏ hàng</button></div>
-<div class="item"><div class="photo">☕</div><h3>Cafe đặc biệt</h3><p>30.000đ</p><button onclick="addCart('Cafe đặc biệt',30000)">+ Thêm giỏ hàng</button></div>
-</div></section>
-<section class="contact"><h2>📍 HUTICHA LÂM THAO</h2><p>Lâm Thao - Phú Thọ</p><p>💬 Zalo | 📘 Facebook | ☎ Hotline</p></section>
+</main>
 <section class="cartbox"><h2>🛒 Giỏ hàng</h2><div id="cart"></div><h3 id="total">Tổng: 0đ</h3></section>
-<footer>© 2026 HUTICHA LÂM THAO - Đồ ăn & Đồ uống chất lượng</footer>
+<section class="contact"><h2>Liên hệ đặt hàng</h2><p>📍 Lâm Thao - Phú Thọ</p><p>💬 Zalo | Facebook | ☎ Hotline</p></section>
+<footer>HUTICHA LÂM THAO © 2026</footer>
 <script src="script.js"></script>
-</body></html>
+</body>
+</html>
